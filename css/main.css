@@ -1,5 +1,9 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+*{
+    font-family: Bahnschrift Condensed;
+}
+button{
+    cursor: pointer;
 }
 .top-nav{
     display: grid;
@@ -23,18 +27,15 @@ body{
     border:2px solid black;
 }
 .home-page{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
     padding:100px;
+    flex-wrap: wrap;
 }
 .home-info{
-    border:2px solid brown;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.home-label > span{
-    font-size: 2em;
 }
 .home-picture{
     display: flex;
@@ -42,10 +43,54 @@ body{
 }
 
 .home-picture > img{
-    width:60%;
-    height: 90%;
+    width:80%;
+    height: 100%;
 }
 
+.home-label .fullstack-label{
+    font-size:3em;
+}
+.fb-lnked{
+    background: #007bb5;
+    color: white;
+}
+
+.github-btn{
+    background-color: #333; /* Dark Gray or Black */
+    color: white;  
+}
+.fb-lnked  , .github-btn{
+    Padding: 15px 20px;
+}
+.social-btn{
+    display:flex;
+    justify-content: start;
+    gap: 20px;
+}
+.download-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #333; /* Green background (you can change it) */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #555   ; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .download-button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+  }
+  
 /*  about me page */
 
 .about-description{
