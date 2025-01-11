@@ -1,6 +1,11 @@
 
 *{
     font-family: Bahnschrift Condensed;
+    color: white;
+}
+body {
+    /* background-color: rgb(31, 27, 27); */
+   background-color: rgba(0, 0, 0, 0.929);
 }
 button{
     cursor: pointer;
@@ -21,7 +26,6 @@ button{
     padding:10px;
 }
 #home{
-    border:2px solid green;
 }
 #about{
     border:2px solid black;
@@ -92,40 +96,73 @@ button{
   }
   
 /*  about me page */
-
 .about-description{
-    border:2px solid yellowgreen ;
-    padding:150px 50px 0px;
+    padding:100px 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-
+.title-about{
+    font-size:4em;
+}
 .title-content{
     text-align: center;
-    padding-left:250px;
-    padding-right: 250px;
+    padding-left:200px;
+    padding-right: 200px;
+}
+.main-title-content{
+    font-size:1.3em;
+    text-align: center;
 }
 .cards{
-    display: grid;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:100px;
-    padding: 0px 250px 250px 250px;
+    padding: 20px 250px 250px 250px; */
 }
 
 
-.cards > div{
+/* .cards > div{
     border:2px solid red;
     padding: 70px 70px 70px 70px;
+} */
+.background-cards{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-.background-icon{
-    width: 100%;        /* Make the image fill the width of the container */
-    height: 100%;       /* Make the image fill the height of the container */
-    object-fit: cover;  /* Ensures the image covers the area without distorting */
+[class$="-card"] {
+    border: 3px solid white;
+    width:250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border-radius: 5%;
+    cursor: pointer;
 }
-
-
+[class$="-card"]:hover{
+    width:255px;
+    height: 305px;
+}
+[class$="-card"]:hover .main-icon{
+    font-size: 6em;
+}
+[class$="-card"]:hover .main-title{
+    font-size: 1.6em;
+}
+.main-icon{
+    font-size:3em;
+}
+.main-title{
+    font-size: 2em;
+}
 /* skill page */
 .skill-title{
     display: flex;
