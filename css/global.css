@@ -1,0 +1,14 @@
+*{
+    font-family: Bahnschrift Condensed;
+    color: white;
+}
+body {
+    /* background-color: rgb(31, 27, 27); */
+   background-color: rgba(0, 0, 0, 0.929);
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
